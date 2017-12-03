@@ -1,0 +1,191 @@
+"""n.uID""","""n.departmanName""","""n.departmanID""","""n.isManager""","""n.managerID""","""n.ustdepartmanID""","""n.isActive"""
+40,"""IT Departmanı """,3099,false,3137,3094,1
+1098,"""Biggplus Grup""",3092,true,3098,0,1
+1103,"""Tasarım Departmanı""",3103,false,3119,3094,1
+1149,"""Mali İşler Departmanı""",3162,true,3182,3093,1
+1150,"""Mali İşler Departmanı""",3162,false,3182,3093,1
+1151,"""Mali İşler Departmanı""",3162,true,3182,3093,1
+1152,"""Mali İşler Departmanı""",3162,true,3182,3093,1
+1154,"""On-Net A.Ş""",3095,false,3104,3092,1
+1155,"""Saınalma&Ürün Yönetimi Departmanı""",3160,false,3172,3093,1
+1156,"""Saınalma&Ürün Yönetimi Departmanı""",3160,false,3172,3093,1
+1162,"""satış""",3294,true,3109,3095,2
+1163,"""satış""",3294,false,3109,3095,1
+1164,"""Mali İşler Departmanı""",3162,true,3098,3093,1
+1166,"""Proje Departmanı""",3159,false,3165,3093,1
+1167,"""IT Departmanı """,3099,true,3137,3094,2
+1168,"""BTM A.Ş. Merkez """,3218,false,3221,3096,1
+1169,"""Proje Departmanı""",3159,false,3165,3093,2
+1170,"""IT Departmanı """,3099,true,3136,3094,2
+1171,"""IT Departmanı """,3099,false,3137,3094,2
+1172,"""IT Departmanı """,3099,false,3144,3094,1
+1173,"""IT Departmanı """,3099,true,3302,3094,1
+1174,"""B2C Departmanı""",3102,true,3113,3094,1
+1175,"""B2C Departmanı""",3102,false,3114,3094,1
+1176,"""Saınalma&Ürün Yönetimi Departmanı""",3160,true,3098,3093,2
+1177,"""satış""",3294,true,3295,3095,2
+1178,"""Lojistik Departmanı""",3163,true,3098,3093,1
+1179,"""Tasarım Departmanı""",3103,true,3098,3094,1
+1180,"""Sanal Mağaza A.Ş """,3093,true,3098,3092,2
+1181,"""BTM Mağazalar""",3219,true,3098,3096,0
+1182,"""B2C Departmanı""",3102,true,3098,3094,2
+1183,"""On-Net A.Ş""",3095,true,3098,3092,1
+1184,"""Biggplus Grup""",3092,true,3097,0,1
+1185,"""Biggplus Grup""",3092,true,3151,0,1
+1186,"""B2C Departmanı""",3102,false,3114,3094,1
+1187,"""Sanal Mağaza A.Ş """,3093,false,3157,3092,2
+1188,"""Sanal Mağaza A.Ş """,3093,true,3154,3092,2
+1200,"""On-Net A.Ş""",3095,false,3105,3092,2
+1201,"""On-Net A.Ş""",3095,false,3105,3092,2
+1202,"""Sanal Mağaza A.Ş """,3093,false,3157,3092,2
+1203,"""On-Net A.Ş""",3095,false,3105,3092,0
+1204,"""On-Net A.Ş""",3095,true,3104,3092,1
+1205,"""Bigglook&Biggtravel Departmanı""",3146,false,3147,3095,2
+1212,"""Lojistik Departmanı""",3163,true,3205,3093,1
+1213,"""Lojistik Departmanı""",3163,true,3192,3093,1
+1214,"""Lojistik Departmanı""",3163,false,3209,3093,1
+1215,"""Lojistik Departmanı""",3163,true,3194,3093,2
+1216,"""Lojistik Departmanı""",3163,false,3198,3093,1
+1217,"""Lojistik Departmanı""",3163,true,3195,3093,1
+1218,"""Lojistik Departmanı""",3163,false,3205,3093,1
+1219,"""Proje Departmanı""",3159,false,3165,3093,1
+1220,"""Çağrı Merkezi Departmanı""",3161,false,3177,3093,1
+1221,"""Çağrı Merkezi Departmanı""",3161,false,3177,3093,1
+1223,"""Proje Departmanı""",3159,true,3164,3093,2
+1224,"""Biggplus Grup""",3092,false,3151,0,2
+1225,"""BTM A.Ş. Merkez """,3218,true,3220,3096,1
+1226,"""Galata-1 Mağazası""",3226,false,3229,3219,2
+1227,"""Galata-1 Mağazası""",3226,true,3225,3219,2
+1229,"""Biggplus Grup""",3092,true,3085,0,1
+1235,"""Saınalma&Ürün Yönetimi Departmanı""",3160,false,3172,3093,2
+1238,"""Tasarım Departmanı""",3103,false,3119,3094,2
+1239,"""On-Net A.Ş""",3095,false,3105,3092,2
+1240,"""B2C Departmanı""",3102,false,3114,3094,2
+1241,"""Tasarım Departmanı""",3103,false,3119,3094,2
+1242,"""Lojistik Departmanı""",3163,false,3194,3093,1
+1243,"""Lojistik Departmanı""",3163,false,3196,3093,1
+1244,"""Lojistik Departmanı""",3163,true,3200,3093,1
+1245,"""Lojistik Departmanı""",3163,true,3205,3093,1
+1246,"""Lojistik Departmanı""",3163,true,3193,3093,1
+1247,"""Lojistik Departmanı""",3163,true,3194,3093,2
+1248,"""Lojistik Departmanı""",3163,false,3206,3093,1
+1249,"""Lojistik Departmanı""",3163,true,3200,3093,2
+1250,"""Lojistik Departmanı""",3163,false,3213,3093,1
+1251,"""Lojistik Departmanı""",3163,true,3192,3093,1
+1252,"""Lojistik Departmanı""",3163,false,3213,3093,1
+1253,"""Lojistik Departmanı""",3163,false,3196,3093,1
+1254,"""Lojistik Departmanı""",3163,false,3213,3093,2
+1255,"""Lojistik Departmanı""",3163,false,3196,3093,1
+1256,"""Biggplus Grup""",3092,false,3151,0,1
+1257,"""Lojistik Departmanı""",3163,true,3200,3093,1
+1258,"""BTM A.Ş. Merkez """,3218,true,3098,3096,1
+1259,"""Biggplus Grup""",3092,false,3151,0,0
+1260,"""IT Departmanı """,3099,true,3137,3094,1
+1262,"""Saınalma&Ürün Yönetimi Departmanı""",3160,false,3098,3093,1
+1263,"""Mali İşler Departmanı""",3162,false,3185,3093,2
+1264,"""Saınalma&Ürün Yönetimi Departmanı""",3160,false,3172,3093,1
+1265,"""satış""",3294,false,3111,3095,2
+1266,"""IT Departmanı """,3099,false,3137,3094,1
+1267,"""IT Departmanı """,3099,false,3137,3094,1
+1268,"""Sanal Mağaza A.Ş """,3093,true,3153,3092,1
+1269,"""Proje Departmanı""",3159,false,3165,3093,2
+1270,"""Proje Departmanı""",3159,false,3164,3093,1
+1271,"""Proje Departmanı""",3159,false,3165,3093,2
+1272,"""Bigglook&Biggtravel Departmanı""",3146,true,3104,3095,1
+1273,"""Bigglook&Biggtravel Departmanı""",3146,false,3147,3095,2
+1274,"""Biggplus Grup""",3092,true,3151,0,0
+1275,"""BTM A.Ş. Merkez """,3218,false,3098,3096,2
+1276,"""B2C Departmanı""",3102,false,3114,3094,1
+1277,"""BTM A.Ş. Merkez """,3218,false,3221,3096,2
+1278,"""Çağrı Merkezi Departmanı""",3161,false,3177,3093,1
+1282,"""Sanal Mağaza A.Ş """,3093,false,3157,3092,2
+1283,"""B2C Departmanı""",3102,false,3114,3094,2
+1284,"""B2C Departmanı""",3102,false,3114,3094,2
+1285,"""Özdilek Mağazası""",3228,false,3236,3219,2
+1286,"""Özdilek Mağazası""",3228,false,3236,3219,2
+1287,"""Bigglook&Biggtravel Departmanı""",3146,false,3147,3095,2
+1288,"""Proje Departmanı""",3159,false,3165,3093,1
+1289,"""BTM A.Ş. Merkez """,3218,false,3221,3096,2
+1296,"""Sanal Mağaza A.Ş """,3093,false,3157,3092,2
+1297,"""Sanal Mağaza A.Ş """,3093,false,3157,3092,2
+1298,"""Sanal Mağaza A.Ş """,3093,true,3098,3092,1
+1309,"""Biggplus Grup""",3092,false,3098,0,1
+1310,"""BTM A.Ş. Merkez """,3218,false,3220,3096,2
+1311,"""Sanal Mağaza A.Ş """,3093,false,3157,3092,2
+1313,"""Galata-1 Mağazası""",3226,true,3225,3219,2
+1316,"""Proje Departmanı""",3159,true,3098,3093,1
+1317,"""satış""",3294,true,3295,3095,1
+1318,"""satış""",3294,false,3109,3095,2
+1319,"""Sanal Mağaza A.Ş """,3093,false,3157,3092,1
+1320,"""On-Net A.Ş""",3095,false,3105,3092,2
+1321,"""Saınalma&Ürün Yönetimi Departmanı""",3160,false,3172,3093,2
+1324,"""B2C Departmanı""",3102,false,3114,3094,2
+1325,"""B2C Departmanı""",3102,false,3114,3094,2
+1326,"""B2C Departmanı""",3102,true,3098,3094,2
+1327,"""BTM A.Ş. Merkez """,3218,false,3221,3096,2
+1328,"""Biggplus Grup""",3092,false,3151,0,0
+1329,"""Biggplus Grup""",3092,false,3151,0,0
+1330,"""Biggplus Grup""",3092,false,3151,0,1
+1377,"""IT Departmanı """,3099,false,3142,3094,2
+1378,"""Mali İşler Departmanı""",3162,false,3098,3093,1
+1401,"""Bigglook&Biggtravel Departmanı""",3146,true,3104,3095,2
+1411,"""On-Net A.Ş""",3095,false,3105,3092,0
+1413,"""B2C Departmanı""",3102,false,3114,3094,0
+1414,"""B2C Departmanı""",3102,false,3114,3094,1
+1416,"""Çağrı Merkezi Departmanı""",3161,true,3098,3093,2
+1417,"""Tasarım Departmanı""",3103,false,3119,3094,1
+1430,"""Sanal Mağaza A.Ş """,3093,true,3154,3092,1
+1431,"""Sanal Mağaza A.Ş """,3093,false,3157,3092,2
+1436,"""On-Net A.Ş""",3095,false,3105,3092,2
+1437,"""IT Departmanı """,3099,true,3137,3094,1
+1438,"""B2C Departmanı""",3102,true,3098,3094,2
+1442,"""""",0,true,0,0,1
+1448,"""Sanal Mağaza A.Ş """,3093,false,3157,3092,1
+1449,"""Saınalma&Ürün Yönetimi Departmanı""",3160,false,3172,3093,1
+1450,"""B2C Departmanı""",3102,false,3114,3094,1
+1451,"""IT Departmanı """,3099,true,3137,3094,0
+1452,"""satış""",3294,false,3109,3095,2
+1456,"""IT Departmanı """,3099,true,3137,3094,1
+1457,"""Lojistik Departmanı""",3163,true,3194,3093,1
+1458,"""Lojistik Departmanı""",3163,true,3194,3093,1
+1459,"""Lojistik Departmanı""",3163,false,3202,3093,1
+1461,"""B2C Departmanı""",3102,false,3114,3094,2
+1466,"""IT Departmanı """,3099,false,3137,3094,1
+1467,"""IT Departmanı """,3099,false,3137,3094,1
+1468,"""Saınalma&Ürün Yönetimi Departmanı""",3160,false,3172,3093,1
+1475,"""Proje Departmanı""",3159,false,3165,3093,1
+1479,"""On-Net A.Ş""",3095,false,3105,3092,1
+1485,"""BTM A.Ş. Merkez """,3218,false,3221,3096,2
+1487,"""Biggplus Grup""",3092,false,3183,0,2
+1489,"""BTM A.Ş. Merkez """,3218,false,3221,3096,1
+1490,"""IT Departmanı """,3099,true,3098,3094,2
+1491,"""On-Net A.Ş""",3095,false,3105,3092,1
+1492,"""Bigglook&Biggtravel Departmanı""",3146,false,3147,3095,1
+1497,"""On-Net A.Ş""",3095,false,3105,3092,1
+1499,"""Lojistik Departmanı""",3163,true,3194,3093,1
+1500,"""BTM A.Ş. Merkez """,3218,false,3220,3096,2
+1501,"""Sanal Mağaza A.Ş """,3093,true,3154,3092,1
+1502,"""Sanal Mağaza A.Ş """,3093,true,3154,3092,1
+1504,"""IT Departmanı """,3099,false,3137,3094,1
+1505,"""Tasarım Departmanı""",3103,false,3119,3094,1
+1507,"""Çağrı Merkezi Departmanı""",3161,true,3098,3093,2
+1508,"""B2C Departmanı""",3102,false,3114,3094,1
+1510,"""Çağrı Merkezi Departmanı""",3161,false,3177,3093,0
+1511,"""B2C Departmanı""",3102,false,3114,3094,1
+1512,"""satış""",3294,true,3104,3095,2
+1513,"""Saınalma&Ürün Yönetimi Departmanı""",3160,false,3172,3093,1
+1514,"""On-Net A.Ş""",3095,true,3098,3092,1
+1515,"""Mali İşler Departmanı""",3162,false,3185,3093,1
+1516,"""Bigglook&Biggtravel Departmanı""",3146,false,3285,3095,1
+1517,"""Proje Departmanı""",3159,true,3098,3093,0
+1518,"""Proje Departmanı""",3159,true,3098,3093,0
+1519,"""Proje Departmanı""",3159,false,3165,3093,1
+2520,"""IT Departmanı """,3099,false,3141,3094,1
+2522,"""Saınalma&Ürün Yönetimi Departmanı""",3160,false,3172,3093,1
+2523,"""Mali İşler Departmanı""",3162,false,3185,3093,0
+2524,"""Proje Departmanı""",3159,false,3165,3093,1
+2525,"""Proje Departmanı""",3159,true,3098,3093,1
+2526,"""Sanal Mağaza A.Ş """,3093,false,3157,3092,1
+2527,"""On-Net A.Ş""",3095,false,3104,3092,1
+2528,"""IT Departmanı """,3099,true,3137,3094,1
+2529,"""Biggplus Grup""",3092,false,3151,0,1

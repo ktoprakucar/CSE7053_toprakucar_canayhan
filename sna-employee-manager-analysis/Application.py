@@ -18,3 +18,9 @@ class Application:
     print(graph.number_of_nodes())
     print(graph.number_of_edges())
 
+    betweenness_centrality = nx.betweenness_centrality(graph)
+    closeness_centrality = nx.closeness_centrality(graph)
+    degree_cenrality = nx.degree_centrality(graph)
+    #eigenvector_centrality = nx.eigenvector_centrality(graph)
+
+

@@ -1,11 +1,14 @@
 import networkx as nx
 
-class Generator:
 
+class Generator:
     def generateGraph(self, nodeList, relationshipList):
-        graph = nx.MultiDiGraph()
+        graph = nx.DiGraph()
         for node in nodeList:
             graph.add_node(node.id)
         for r in relationshipList:
-            graph.add_edge(r.fromNode, r.toNode, type=r.type)
+            if graph.has_edge(r.fromNode, r.toNode):
+                graph[r.fromNode][r.toNode]['weight'] += r.point
+            else:
+                graph.add_edge(r.fromNode, r.toNode, weight=r.point)
         return graph

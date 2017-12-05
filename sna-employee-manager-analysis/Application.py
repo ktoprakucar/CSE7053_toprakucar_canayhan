@@ -11,16 +11,22 @@ class Application:
     tesekkurList = reader.readRelationship('tesekkur')
     takdirList = reader.readRelationship('takdir')
     dogumgunuList = reader.readRelationship('dogumgunu')
-    relationships = tesekkurList + takdirList + dogumgunuList
 
-    graph = networkGenerator.generateGraph(nodeList, relationships)
+    print(len(tesekkurList))
+    print(len(takdirList))
+    print(len(dogumgunuList))
 
-    print(graph.number_of_nodes())
-    print(graph.number_of_edges())
+    takdirGraph = networkGenerator.generateGraph(nodeList, takdirList)
+    tesekkurGraph = networkGenerator.generateGraph(nodeList, tesekkurList)
+    dogumgunuGraph = networkGenerator.generateGraph(nodeList, dogumgunuList)
 
-    betweenness_centrality = nx.betweenness_centrality(graph)
-    closeness_centrality = nx.closeness_centrality(graph)
-    degree_cenrality = nx.degree_centrality(graph)
+    print(takdirGraph.number_of_edges())
+    print(tesekkurGraph.number_of_edges())
+    print(dogumgunuGraph.number_of_edges())
+
+    #betweenness_centrality = nx.betweenness_centrality(graph)
+    #closeness_centrality = nx.closeness_centrality(graph)
+    #degree_cenrality = nx.degree_centrality(graph)
     #eigenvector_centrality = nx.eigenvector_centrality(graph)
 
 

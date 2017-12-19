@@ -1,6 +1,5 @@
 import networkx as nx
 
-
 class Generator:
     def generateGraph(self, nodeList, relationshipList):
         graph = nx.DiGraph()

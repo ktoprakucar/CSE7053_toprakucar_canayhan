@@ -1,7 +1,9 @@
 from network.Generator import Generator
+from network.TieStrength import TieStrength
 from reader.CsvReader import CsvReader
 
 import networkx as nx
+
 
 class Application:
     networkGenerator = Generator()
@@ -11,6 +13,11 @@ class Application:
     tesekkurList = reader.readRelationship('tesekkur')
     takdirList = reader.readRelationship('takdir')
     dogumgunuList = reader.readRelationship('dogumgunu')
+
+    tieStrength = TieStrength(nodeList, takdirList, dogumgunuList, tesekkurList)
+
+    tieStrengthsFromManagerToEmployee = tieStrength.calculateFromManagerToEmployee()
+    tieStrengthsFromEmployeeToEmployee = tieStrength.calculateFromEmployeeToEmployee()
 
     print(len(tesekkurList))
     print(len(takdirList))
@@ -24,9 +31,9 @@ class Application:
     print(tesekkurGraph.number_of_edges())
     print(dogumgunuGraph.number_of_edges())
 
-    #betweenness_centrality = nx.betweenness_centrality(graph)
-    #closeness_centrality = nx.closeness_centrality(graph)
-    #degree_cenrality = nx.degree_centrality(graph)
-    #eigenvector_centrality = nx.eigenvector_centrality(graph)
+    betweenness_centrality = nx.betweenness_centrality(takdirGraph)
+    closeness_centrality = nx.closeness_centrality(takdirGraph)
+    degree_cenrality = nx.degree_centrality(takdirGraph)
+    eigenvector_centrality = nx.eigenvector_centrality(takdirGraph)
 
-
+    print("blabla")

@@ -3,7 +3,7 @@ class Employee:
         self.id = id
         self.departmentName = departmentName
         self.departmentId = departmentId
-        self.isManager = isManager
+        self.isManager = (isManager == "true")
         self.managerId = managerId
         self.superDepartmentId = superDepartmentId
         self.isActive = isActive

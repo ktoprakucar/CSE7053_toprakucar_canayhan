@@ -1,8 +1,9 @@
+import networkx as nx
+
 from network.Generator import Generator
 from network.TieStrength import TieStrength
 from reader.CsvReader import CsvReader
-
-import networkx as nx
+from visualization.Monitor import Monitor
 
 
 class Application:
@@ -19,21 +20,18 @@ class Application:
     tieStrengthsFromManagerToEmployee = tieStrength.calculateFromManagerToEmployee()
     tieStrengthsFromEmployeeToEmployee = tieStrength.calculateFromEmployeeToEmployee()
 
-    print(len(tesekkurList))
-    print(len(takdirList))
-    print(len(dogumgunuList))
-
     takdirGraph = networkGenerator.generateGraph(nodeList, takdirList)
     tesekkurGraph = networkGenerator.generateGraph(nodeList, tesekkurList)
     dogumgunuGraph = networkGenerator.generateGraph(nodeList, dogumgunuList)
-
-    print(takdirGraph.number_of_edges())
-    print(tesekkurGraph.number_of_edges())
-    print(dogumgunuGraph.number_of_edges())
 
     betweenness_centrality = nx.betweenness_centrality(takdirGraph)
     closeness_centrality = nx.closeness_centrality(takdirGraph)
     degree_cenrality = nx.degree_centrality(takdirGraph)
     eigenvector_centrality = nx.eigenvector_centrality(takdirGraph)
 
-    print("blabla")
+    monitor = Monitor(nodeList, tesekkurList, takdirList, dogumgunuList)
+    monitor.visualizeGraph(tesekkurList)
+    monitor.visualizeGraph(takdirList)
+    monitor.visualizeGraph(dogumgunuList)
+
+    print("the end")

@@ -1,0 +1,7 @@
+//retrieve edges from neo4j
+MATCH p=()-[r:DOGUMGUNU]->() RETURN r
+MATCH p=()-[r:TAKDIR]->() RETURN r
+MATCH p=()-[r:TESEKKUR]->() RETURN r
+
+//retrieve nodes from neo4j
+MATCH (n) RETURN n

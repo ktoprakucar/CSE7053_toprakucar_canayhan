@@ -39,11 +39,15 @@ class Monitor:
         layout = g.layout_auto()
         g.vs["label"] = g.vs["name"]
         visual_style = {}
+        self.setVisualStyle(g, layout, visual_style)
+        plot(g, **visual_style)
+
+    def setVisualStyle(self, g, layout, visual_style):
         visual_style["vertex_label"] = g.vs["name"]
         visual_style["edge_width"] = [1 + 2 * int(weight) for weight in g.es["weight"]]
         visual_style["vertex_size"] = 35
         visual_style["layout"] = layout
-        visual_style["bbox"] = (1400, 800)
+        visual_style["bbox"] = (1920, 1080)
         visual_style["margin"] = 20
-        plot(g, **visual_style)
+        visual_style["name"] = "myname"
 

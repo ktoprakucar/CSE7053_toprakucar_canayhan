@@ -68,6 +68,7 @@ class TieStrength:
             if graph.has_edge(relation.fromNode, relation.toNode):
 
                 # if there are more than one relation between same nodes, weights of these relations are decreased
+                # log (x+1) / log(max(x)) +1)
                 graph[relation.fromNode][relation.toNode]['weight'] = (graph[relation.fromNode][relation.toNode]['weight'] * numberOfEdgesFromNode[relation.fromNode] * calibrationValue) * graph[relation.fromNode][relation.toNode]['numberOfEdges'] * 0.1
                 graph[relation.fromNode][relation.toNode]['weight'] += relation.point
                 graph[relation.fromNode][relation.toNode]['numberOfEdges'] += 1

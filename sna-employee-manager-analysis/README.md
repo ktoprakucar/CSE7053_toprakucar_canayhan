@@ -12,5 +12,3 @@ technologies:
         -networkx
         -igraph
         -pycairo
-
-

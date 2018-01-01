@@ -1,5 +1,6 @@
 import networkx as nx
 
+from network.Centrality import Centrality
 from network.Generator import Generator
 from network.TieStrength import TieStrength
 from reader.CsvReader import CsvReader
@@ -9,6 +10,7 @@ from visualization.Monitor import Monitor
 class Application:
     networkGenerator = Generator()
     reader = CsvReader()
+    centrality = Centrality()
 
     nodeList = reader.readEmployee()
     tesekkurList = reader.readRelationship('tesekkur')
@@ -24,10 +26,10 @@ class Application:
     tesekkurGraph = networkGenerator.generateGraph(nodeList, tesekkurList)
     dogumgunuGraph = networkGenerator.generateGraph(nodeList, dogumgunuList)
 
-    betweenness_centrality = nx.betweenness_centrality(takdirGraph)
-    closeness_centrality = nx.closeness_centrality(takdirGraph)
-    degree_cenrality = nx.degree_centrality(takdirGraph)
-    eigenvector_centrality = nx.eigenvector_centrality(takdirGraph)
+    betweenness_centrality = centrality.calculateBetweennesCentrality(takdirGraph)
+    closeness_centrality = centrality.calculateClosenessCentrality(takdirGraph)
+    degree_cenrality = centrality.calculateDegreeCentrality(takdirGraph)
+    eigenvector_centrality = centrality.calculateEigenVectorCentrality(takdirGraph)
 
     monitor = Monitor(nodeList, tesekkurList, takdirList, dogumgunuList)
     monitor.visualizeGraph(tesekkurList)

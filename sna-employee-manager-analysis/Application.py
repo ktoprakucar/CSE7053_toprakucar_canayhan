@@ -1,5 +1,3 @@
-import networkx as nx
-
 from network.Centrality import Centrality
 from network.Generator import Generator
 from network.TieStrength import TieStrength
@@ -26,10 +24,20 @@ class Application:
     tesekkurGraph = networkGenerator.generateGraph(nodeList, tesekkurList)
     dogumgunuGraph = networkGenerator.generateGraph(nodeList, dogumgunuList)
 
-    betweenness_centrality = centrality.calculateBetweennesCentrality(takdirGraph)
-    closeness_centrality = centrality.calculateClosenessCentrality(takdirGraph)
-    degree_cenrality = centrality.calculateDegreeCentrality(takdirGraph)
-    eigenvector_centrality = centrality.calculateEigenVectorCentrality(takdirGraph)
+    takdir_betweenness_centrality = centrality.calculateBetweennesCentrality(takdirGraph)
+    takdir_closeness_centrality = centrality.calculateClosenessCentrality(takdirGraph)
+    takdir_degree_cenrality = centrality.calculateDegreeCentrality(takdirGraph)
+    takdir_eigenvector_centrality = centrality.calculateEigenVectorCentrality(takdirGraph)
+
+    tesekkur_betweenness_centrality = centrality.calculateBetweennesCentrality(tesekkurGraph)
+    tesekkur_closeness_centrality = centrality.calculateClosenessCentrality(tesekkurGraph)
+    tesekkur_degree_cenrality = centrality.calculateDegreeCentrality(tesekkurGraph)
+    tesekkur_eigenvector_centrality = centrality.calculateEigenVectorCentrality(tesekkurGraph)
+
+    dogumgunu_betweenness_centrality = centrality.calculateBetweennesCentrality(dogumgunuGraph)
+    dogumgunu_closeness_centrality = centrality.calculateClosenessCentrality(dogumgunuGraph)
+    dogumgunu_degree_cenrality = centrality.calculateDegreeCentrality(dogumgunuGraph)
+    dogumgunu_eigenvector_centrality = centrality.calculateEigenVectorCentrality(dogumgunuGraph)
 
     monitor = Monitor(nodeList, tesekkurList, takdirList, dogumgunuList)
     monitor.visualizeGraph(tesekkurList)

@@ -19,9 +19,14 @@ class Centrality:
         return nx.eigenvector_centrality(undirectedGraph)
 
     def removeEdgeDirectionsAndIsolate(self, graph):
-        undirectedGraph = graph.to_undirected()
-        isolateList = nx.isolates(undirectedGraph)
-        for isolate in isolateList:
-            print(isolate)
-            #undirectedGraph.remove_node(isolate)
+        undirectedGraph = nx.Graph();
+        edges = list(graph.edges())
+        for edge in edges:
+            undirectedGraph.add_edge(edge[0], edge[1])
+        print("normal graph: ")
+        print(str(len(graph.nodes)))
+        print("isolated graph: ")
+        print(str(len(undirectedGraph.nodes)))
+
+
         return undirectedGraph

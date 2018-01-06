@@ -19,8 +19,18 @@ class Centrality:
         return nx.eigenvector_centrality(undirectedGraph)
 
     def removeEdgeDirectionsAndIsolate(self, graph):
-        undirectedGraph = nx.Graph();
-        edges = list(graph.edges())
-        for edge in edges:
-            undirectedGraph.add_edge(edge[0], edge[1])
+        undirectedGraph = self.retrieveMostCrowdedComponent(graph)
+        return undirectedGraph
+
+    def retrieveMostCrowdedComponent(self, graph):
+        un = graph.to_undirected()
+        components = list(nx.connected_component_subgraphs(un))
+        mostCrowdedId = 0
+        mostCrowdedPopulation = 0
+        if len(components) > 1:
+            for g in components:
+                if len(g.nodes) > mostCrowdedPopulation:
+                    mostCrowdedPopulation = len(g.nodes)
+                    mostCrowdedId = components.index(g)
+        undirectedGraph = components[mostCrowdedId]
         return undirectedGraph

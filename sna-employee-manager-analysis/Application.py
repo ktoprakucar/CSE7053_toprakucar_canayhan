@@ -45,6 +45,10 @@ class Application:
     tesekkur_dataframe = repository.exportToDataframe(tesekkur_betweenness_centrality, tesekkur_closeness_centrality, tesekkur_degree_cenrality, tesekkur_eigenvector_centrality)
     dogumgunu_dataframe = repository.exportToDataframe(dogumgunu_betweenness_centrality, dogumgunu_closeness_centrality, dogumgunu_degree_cenrality, dogumgunu_eigenvector_centrality)
 
+    print(takdir_dataframe)
+    print(tesekkur_dataframe)
+    print(dogumgunu_dataframe)
+
     monitor = Monitor(nodeList, tesekkurList, takdirList, dogumgunuList)
     monitor.visualizeGraph(tesekkurList)
     monitor.visualizeGraph(takdirList)

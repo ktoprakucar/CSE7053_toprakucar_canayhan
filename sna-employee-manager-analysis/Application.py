@@ -22,6 +22,9 @@ class Application:
     tieStrengthsFromManagerToEmployee = tieStrength.calculateFromManagerToEmployee()
     tieStrengthsFromEmployeeToEmployee = tieStrength.calculateFromEmployeeToEmployee()
 
+    managerToEmployeeDataframe = repository.exportGraphToDataframe(tieStrengthsFromManagerToEmployee)
+    employeeToEmployeeDataFrame = repository.exportGraphToDataframe(tieStrengthsFromEmployeeToEmployee)
+
     takdirGraph = networkGenerator.generateGraph(nodeList, takdirList)
     tesekkurGraph = networkGenerator.generateGraph(nodeList, tesekkurList)
     dogumgunuGraph = networkGenerator.generateGraph(nodeList, dogumgunuList)

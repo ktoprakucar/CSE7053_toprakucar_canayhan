@@ -8,3 +8,11 @@ class Repository:
         df = pd.merge(df, pd.DataFrame(list(degree.items()), columns=['userID', 'degree_cenrality']), on='userID')
         df = pd.merge(df, pd.DataFrame(list(eigen.items()), columns=['userID', 'eigenvector_centrality']), on='userID')
         return df
+
+    def exportGraphToDataframe(self, graph):
+        index = 0
+        df = pd.DataFrame(columns=['from_node', 'to_node', 'tie_strenght'])
+        for edge in graph.edges():
+            df.loc[index] = [edge[0],edge[1],graph[edge[0]][edge[1]]['weight']]
+            index += 1
+        return df

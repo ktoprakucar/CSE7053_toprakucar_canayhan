@@ -10,35 +10,30 @@ class TieStrength:
         self.tesekkurList = tesekkurList
 
     def calculateFromManagerToEmployee(self):
-        graph = nx.DiGraph()
-
-
         # add takdir
-        self.generateGraphFromRelations(graph, self.takdirList, 1 / len(self.takdirList))
+        takdirGraph = self.generateGraphFromRelations(self.takdirList, 1 / len(self.takdirList))
         # add tesekkur
-        self.generateGraphFromRelations(graph, self.tesekkurList, 1 / len(self.tesekkurList))
+        tesekkurGraph = self.generateGraphFromRelations(self.tesekkurList, 1 / len(self.tesekkurList))
         # add dogumgunu
-        self.generateGraphFromRelations(graph, self.dogumgunuList, 1 / len(self.dogumgunuList))
+        dogumgunuGraph = self.generateGraphFromRelations(self.dogumgunuList, 1 / len(self.dogumgunuList))
 
-        print("before removing nonmanagers: " + str(len(graph.edges)))
+        graphlist = [takdirGraph, tesekkurGraph, dogumgunuGraph]
+        graph = self.mergeGraphs(graphlist)
         self.removeNonManagerSenders(graph)
-        print("before removing nonmanagers: " + str(len(graph.edges)))
 
         return graph
 
     def calculateFromEmployeeToEmployee(self):
-        graph = nx.DiGraph()
-
         # add takdir
-        self.generateGraphFromRelations(graph, self.takdirList, 1 / len(self.takdirList))
+        takdirGraph = self.generateGraphFromRelations(self.takdirList, 1 / len(self.takdirList))
         # add tesekkur
-        self.generateGraphFromRelations(graph, self.tesekkurList, 1 / len(self.tesekkurList))
+        tesekkurGraph = self.generateGraphFromRelations(self.tesekkurList, 1 / len(self.tesekkurList))
         # add dogumgunu
-        self.generateGraphFromRelations(graph, self.dogumgunuList, 1 / len(self.dogumgunuList))
+        dogumgunuGraph = self.generateGraphFromRelations(self.dogumgunuList, 1 / len(self.dogumgunuList))
 
-        print("before removing managers: " + str(len(graph.edges)))
+        graphlist = [takdirGraph, tesekkurGraph, dogumgunuGraph]
+        graph = self.mergeGraphs(graphlist)
         self.removeManagerSenders(graph)
-        print("before removing managers: " + str(len(graph.edges)))
 
         return graph
 
@@ -63,7 +58,8 @@ class TieStrength:
             if isManager:
                 graph.remove_edge(edge[0], edge[1])
 
-    def generateGraphFromRelations(self, graph, list, calibrationValue):
+    def generateGraphFromRelations(self, list, calibrationValue):
+        graph = nx.Graph()
         numberOfEdgesFromNode = {}
         self.calculateEdgeNumberFromTheNode(numberOfEdgesFromNode, list)
         greatestWeight = self.getGreatestWeight(list)
@@ -77,6 +73,7 @@ class TieStrength:
                 graph.add_edge(relation.fromNode, relation.toNode, weight= calculatedWeight, numberOfEdges=1)
         mostRelationAmount = self.retrieveMostRelationBetweenSameNodes(graph)
         self.relateEdgeSizeOnWeights(graph, mostRelationAmount)
+        return graph
 
     def relateEdgeSizeOnWeights(self, graph, mostRelationAmount):
         for edge in graph.edges():
@@ -106,3 +103,13 @@ class TieStrength:
                 numberOfEdgesFromNode[relation.fromNode] += 1
             else:
                 numberOfEdgesFromNode[relation.fromNode] = 1
+
+    def mergeGraphs(self, graphlist):
+        graph = nx.Graph()
+        for g in graphlist:
+            for edge in g.edges():
+                if graph.has_edge(edge[0], edge[1]):
+                    graph[edge[0]][edge[1]]['weight'] += g[edge[0]][edge[1]]['weight']
+                else:
+                    graph.add_edge(edge[0], edge[1], weight=g[edge[0]][edge[1]]['weight'])
+        return graph
